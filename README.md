@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# ProgressBar Component
+The ProgressBar component is a simple React component that indicate status of loading
+## Installation
+To use the ProgressBar component, you need to have a React project set up. If you don't have one, you can create a new React application using Create React App or any other preferred method.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Usage
+To integrate the ProgressBar component into your application, follow these steps:
 
-### `npm start`
+1.install component in any folder and import and import it
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```import ProgressBar from './YourFolder/ProgressBar';```
 
-### `npm test`
+2.initialize the components with the required properties
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
 
-### `npm run build`
+  <h1>ProgressBar</h1>
+      <ProgressBar value={progress} MainBackground='grey'  ProgressBackground='green' ProgressRadius='35px'     NumIndicate={true} NumIndicateColor="#000" NumIndicateSize="18px" NumIndicateWeight="bold" />
+   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <div>
+      <h1>rounded ProgressBar</h1>
+      <CircularProgressBar  NumIndicate={true} progressColor={'orange'}  NumIndicateSize='25px' NumIndicateColor="#000"  NumIndicateWeight="lighter"  value={progress} strokeWidth={10} sqSize={100} />
+      
+    </div>
 
-### `npm run eject`
+```
+## property list (ProgressBar): 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ### value: 
+  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+value that you process in your code and specify in the progress bar so that it displays the percentage of completion
+  
+### MainBackground:
+  
+Background color of indicator wrapper
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### ProgressBackground:
+  
+Background color of indicator
 
-## Learn More
+### ProgressRadius:
+Radius of progressbar 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### NumIndicate:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+takes one of two states: true/false. If true - enables the display of a numerical indication on the progress bar
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### NumIndicateColor:
+ color of Numerick indicator
+### NumIndicateSize:
+size of Numerick indicator
+### NumIndicateWeight
+weight of Numerick indicator
 
-### Analyzing the Bundle Size
+## property list (CircularProgressBar): 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+  ### value: 
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+value that you process in your code and specify in the progress bar so that it displays the percentage of completion
 
-### Advanced Configuration
+### progressColor :
+Background color of indicator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### NumIndicateColor:
+ color of Numerick indicator
+### NumIndicateSize:
+size of Numerick indicator
+### NumIndicateWeight
+weight of Numerick indicator
+### sqSize:
+size of progressbar
+### strokeWidth:
+width of circle prograssbar stroke
