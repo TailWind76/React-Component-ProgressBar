@@ -33,52 +33,55 @@ To integrate the ProgressBar component into your application, follow these steps
 ## property list (ProgressBar): 
 
 
-  ### value: 
+`value` 
   
-
 value that you process in your code and specify in the progress bar so that it displays the percentage of completion
   
-### MainBackground:
+`MainBackground`
   
 Background color of indicator wrapper
 
-### ProgressBackground:
+`ProgressBackground`
   
 Background color of indicator
 
-### ProgressRadius:
+`ProgressRadius`
 Radius of progressbar 
 
-### NumIndicate:
+`NumIndicate`
 
 takes one of two states: true/false. If true - enables the display of a numerical indication on the progress bar
 
 
-### NumIndicateColor:
+`NumIndicateColor`
  color of Numerick indicator
-### NumIndicateSize:
+ 
+`NumIndicateSize`
 size of Numerick indicator
-### NumIndicateWeight
+
+`NumIndicateWeight`
 weight of Numerick indicator
 
 ## property list (CircularProgressBar): 
 
 
-  ### value: 
-  
-
+  `value` 
 value that you process in your code and specify in the progress bar so that it displays the percentage of completion
 
-### progressColor :
+`progressColor`
 Background color of indicator
 
-### NumIndicateColor:
+`NumIndicateColor`
  color of Numerick indicator
-### NumIndicateSize:
+ 
+`NumIndicateSize`
 size of Numerick indicator
-### NumIndicateWeight
+
+`NumIndicateWeight`
 weight of Numerick indicator
-### sqSize:
+
+`sqSize`
 size of progressbar
-### strokeWidth:
+
+`strokeWidth`
 width of circle prograssbar stroke
